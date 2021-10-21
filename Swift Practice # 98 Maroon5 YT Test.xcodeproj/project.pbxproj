@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2D9A5C8B2721830900C26735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5C8A2721830900C26735 /* AppDelegate.swift */; };
 		2D9A5C8D2721830900C26735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5C8C2721830900C26735 /* SceneDelegate.swift */; };
-		2D9A5C8F2721830900C26735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5C8E2721830900C26735 /* ViewController.swift */; };
 		2D9A5C922721830900C26735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9A5C902721830900C26735 /* Main.storyboard */; };
 		2D9A5C942721830A00C26735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9A5C932721830A00C26735 /* Assets.xcassets */; };
 		2D9A5C972721830A00C26735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9A5C952721830A00C26735 /* LaunchScreen.storyboard */; };
+		2D9A5CA3272185E500C26735 /* YoutubeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5CA2272185E500C26735 /* YoutubeTableViewController.swift */; };
+		2D9A5CA5272185F500C26735 /* YoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5CA4272185F500C26735 /* YoutubeTableViewCell.swift */; };
+		2D9A5CA72721870800C26735 /* YT JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5CA62721870800C26735 /* YT JSON.swift */; };
+		2D9A5CA927219CCA00C26735 /* YTWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A5CA827219CCA00C26735 /* YTWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D9A5C872721830900C26735 /* Swift Practice # 98 Maroon5 YT Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Practice # 98 Maroon5 YT Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9A5C8A2721830900C26735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D9A5C8C2721830900C26735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D9A5C8E2721830900C26735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D9A5C912721830900C26735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D9A5C932721830A00C26735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D9A5C962721830A00C26735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D9A5C982721830A00C26735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9A5CA2272185E500C26735 /* YoutubeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewController.swift; sourceTree = "<group>"; };
+		2D9A5CA4272185F500C26735 /* YoutubeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewCell.swift; sourceTree = "<group>"; };
+		2D9A5CA62721870800C26735 /* YT JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YT JSON.swift"; sourceTree = "<group>"; };
+		2D9A5CA827219CCA00C26735 /* YTWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				2D9A5C8A2721830900C26735 /* AppDelegate.swift */,
 				2D9A5C8C2721830900C26735 /* SceneDelegate.swift */,
-				2D9A5C8E2721830900C26735 /* ViewController.swift */,
+				2D9A5CAC27219CF500C26735 /* JSON */,
+				2D9A5CAB27219CDE00C26735 /* TableView */,
+				2D9A5CAA27219CD500C26735 /* Web */,
 				2D9A5C902721830900C26735 /* Main.storyboard */,
 				2D9A5C932721830A00C26735 /* Assets.xcassets */,
 				2D9A5C952721830A00C26735 /* LaunchScreen.storyboard */,
 				2D9A5C982721830A00C26735 /* Info.plist */,
 			);
 			path = "Swift Practice # 98 Maroon5 YT Test";
+			sourceTree = "<group>";
+		};
+		2D9A5CAA27219CD500C26735 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2D9A5CA827219CCA00C26735 /* YTWebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		2D9A5CAB27219CDE00C26735 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2D9A5CA2272185E500C26735 /* YoutubeTableViewController.swift */,
+				2D9A5CA4272185F500C26735 /* YoutubeTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2D9A5CAC27219CF500C26735 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2D9A5CA62721870800C26735 /* YT JSON.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D9A5C8F2721830900C26735 /* ViewController.swift in Sources */,
 				2D9A5C8B2721830900C26735 /* AppDelegate.swift in Sources */,
+				2D9A5CA72721870800C26735 /* YT JSON.swift in Sources */,
+				2D9A5CA5272185F500C26735 /* YoutubeTableViewCell.swift in Sources */,
 				2D9A5C8D2721830900C26735 /* SceneDelegate.swift in Sources */,
+				2D9A5CA927219CCA00C26735 /* YTWebViewController.swift in Sources */,
+				2D9A5CA3272185E500C26735 /* YoutubeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
